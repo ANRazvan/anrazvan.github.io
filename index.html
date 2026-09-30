@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Răzvan Alexe</title>
+<meta name="description" content="Răzvan Alexe — software developer. Maker of BountyTasks." />
+<style>
+  :root {
+    --bg: #0A0A12;
+    --surface: #14141F;
+    --border: #262635;
+    --text: #F5F5FA;
+    --muted: #9A9AB0;
+    --accent: #FFC53D;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #FBFAF7;
+      --surface: #FFFFFF;
+      --border: #E6E3DC;
+      --text: #16161F;
+      --muted: #6B6B7B;
+      --accent: #C98A00;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 64px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  main { width: 100%; max-width: 620px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .lede { color: var(--muted); margin: 0 0 40px; }
+  .card {
+    display: block;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface);
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 12px;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h2 { margin: 0 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+  .emoji { font-size: 1.6rem; line-height: 1; display: block; margin-bottom: 10px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Răzvan Alexe</h1>
+  <p class="lede">Software developer. Currently building BountyTasks.</p>
+
+  <a class="card" href="/bountytasks/privacy/">
+    <span class="emoji">💰</span>
+    <h2>BountyTasks</h2>
+    <p>Chores, but make it a game — turn tasks into bounties your friends compete over. Privacy policy →</p>
+  </a>
+
+  <footer>More coming soon.</footer>
+</main>
+</body>
+</html>
